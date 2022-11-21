@@ -2,30 +2,21 @@ public class Operadores {
 
     public static void main(String[] args) {
         
-        String nomeCompleto = "LINGUAGEM" + "JAVA";
-        System.out.println(nomeCompleto);
+        boolean condicao1=true;
 
-        String concatenacao ="?"; 
-	        
-        concatenacao = 1+1+1+"1";
+        boolean condicao2=true;
 
-        System.out.println(concatenacao);
+/* Aqui estamos utilizando o operador lógico E para fazer a união de duas 
+expressões. 
+É como se estivesse escrito:
+ "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+*/
+        if(condicao1 && condicao2)
+	    System.out.print("Os dois valores precisam ser verdadeiros");
 
-        concatenacao = 1+"1"+1+1;
-        
-        System.out.println(concatenacao);
-
-        concatenacao = 1+"1"+1+"1";
-        
-        System.out.println(concatenacao);
-
-        concatenacao = "1"+1+1+1;
-        
-        System.out.println(concatenacao);
-
-        concatenacao = "1"+(1+1+1);
-        
-        System.out.println(concatenacao);
+//Se condicao1 OU condicao2 for verdadeira, executar código.
+        if(condicao1 || condicao2)
+        System.out.print("Um dos valores precisa ser verdadeiro");
 
     }
 
